@@ -3,9 +3,9 @@ from turtle import *
 
 screensize(1024,768)
 bgcolor("red")
-#time.sleep(3)
+time.sleep(3)
 clearscreen()
-#time.sleep(1)
+time.sleep(1)
 bgpic("background.gif")
 
 pensize(4)
