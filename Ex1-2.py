@@ -53,11 +53,3 @@ end_fill()
 	
 hideturtle()
 done() 
-
-
-
-
-
-
-
-

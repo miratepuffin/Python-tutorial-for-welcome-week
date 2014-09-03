@@ -20,3 +20,5 @@ def drawRectangle(x, y, color='yellow'): # the color = 'yellow' part says that i
 drawRectangle(80, 40) # notice here we wont give a 3rd parameter, so the fill color should be yellow.
 time.sleep(3) # wait 3 seconds til we call the second method
 drawRectangle(80, 40, 'blue') # here however we give the color blue, so the fill color should be blue.
+
+done()

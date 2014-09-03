@@ -36,8 +36,7 @@ elif shape == 'triangle': # if user entered triangle then do this
 	left(120)
 	forward(size)
 elif shape == 'circle': # if user entered circle then do this
-	goto(0, size)
-	right(360)
+	circle(size)
 else: 
 	print("I am sorry but I don't know how to draw a " + shape + ".")
 

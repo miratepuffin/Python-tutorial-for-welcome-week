@@ -105,6 +105,4 @@ forward(40)
 left(90)
 forward(20)
 
-
-
-
+done()

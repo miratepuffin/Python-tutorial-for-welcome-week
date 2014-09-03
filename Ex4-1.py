@@ -15,3 +15,5 @@ def drawRectangle(x, y):
     end_fill() # end the fill
 		
 drawRectangle(80, 40) # make a call to the method that we created which sets x to 20 and y to 10
+
+done()

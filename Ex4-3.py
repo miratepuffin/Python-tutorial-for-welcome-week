@@ -30,4 +30,4 @@ speed(50)
 up()
 drawChessboard(-200, 200, 50)
 
-			
+done()
