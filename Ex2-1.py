@@ -1,27 +1,17 @@
 
 from turtle import *
 
-color = input("Name a color: ")
-user_input = input("Define the radius for your circle: ")
-radius = int(user_input)
+user_input = input("Define the radius for your circle: ") # Call the input function which allows the user to input a value into the terminal
+# The string (sentance) that is given to the function is the message promt that allows the user to see what they should be entering. 
+# We set a variable called user_input to = what the user typed in so that we can panipulate it and use it in our programme
+
+radius = int(user_input) # the int function is used to change the users input (which was from phythons point of view a word) to a number which
+# can have calculations performed upon it. This is again saved into a variable so we can use it later on.
 
 speed(100)
 
-if(color not in ['blue', 'Blue', 'BLUE']): 
-    color = 'red';
-    #One of many ways to check if the set color is blue or NOT. Remember python is a case sensitive language so all different combinations have been included.
-    #If color is not blue, make sure to set color to RED.
-
-pencolor(color) # Set the color of the drawing
-# The function accepts string literals such as "red", "yellow", "blue" but also RGB values.
-
-fillcolor(color) # this function is to set the colour that we will fill the shape with. Again we have picked the same user given input
-
-begin_fill()	# A function that tells python what to fill in
-
-circle(radius) # Make a call to pythons circle function
-
-end_fill()	# Once we have finished drawing the shape we tell python to end the fill, such that we dont fill any other drawings after this line                                     
+circle(radius) # Make a call to pythons circle function, this draws a full circle with a radius of the number given to it. In this case we use
+# the radius that the user entered, but any number would work.
 
 hideturtle()
 
