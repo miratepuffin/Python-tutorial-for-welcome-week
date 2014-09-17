@@ -3,7 +3,7 @@ from turtle import *
 shape = input("Would you like to draw a square or a triangle:") #Get the users input for the shape to draw 
 colour = input("Would you like that to be red or blue:") #Get the users input for the colour of there first shape
 user_input = input("What size would you like it to be?")  #Get the users input for the size of the shape
-radius = int(user_input) # Turn the size that the user has entered into a number so that is can be used in calculations
+size = int(user_input) # Turn the size that the user has entered into a number so that is can be used in calculations
 speed(100)
 
 if(shape=="triangle"): #see if they user has chosen to draw a triangle - if so enter this section of code
@@ -18,11 +18,11 @@ if(shape=="triangle"): #see if they user has chosen to draw a triangle - if so e
 		done()
 
 	begin_fill() #once the fill colour has been set begin the fill draw the triangle and end the fill
-	forward(100)
+	forward(size)
 	left(120)		
-	forward(100)
+	forward(size)
 	left(120)		
-	forward(100)
+	forward(size)
 	end_fill()
 
 	home()		# We then use the home function to reset the turtles position and angle so that the square isn't at a funky angle
@@ -40,13 +40,13 @@ if(shape=="triangle"): #see if they user has chosen to draw a triangle - if so e
 		fillcolor("red")
 
 	begin_fill()	#We then start the fill and draw the square and end the fill
-	forward(100)
+	forward(size)
 	left(90)		
-	forward(100)
+	forward(size)
 	left(90)		
-	forward(100)
+	forward(size)
 	left(90)
-	forward(100)
+	forward(size)
 	left(90)   		
 	end_fill()	
 
@@ -63,13 +63,13 @@ elif(shape=="square"): # The second part of our outer else if statement checks i
 		done()
 
 	begin_fill()	#This time round as the user has chosen to start with the square we start the fill and draw that first, and then end the fill
-	forward(100)
+	forward(size)
 	left(90)		
-	forward(100)
+	forward(size)
 	left(90)		
-	forward(100)
+	forward(size)
 	left(90)
-	forward(100)
+	forward(size)
 	left(90)   		
 	end_fill()	
 
@@ -87,11 +87,11 @@ elif(shape=="square"): # The second part of our outer else if statement checks i
 		fillcolor("red")
 
 	begin_fill()
-	forward(100)
+	forward(size)
 	left(120)		
-	forward(100)
+	forward(size)
 	left(120)		
-	forward(100)
+	forward(size)
 	end_fill()
 
 else:	# The else part of this programme exists as a base case, where if the user enters a shape we don't know then we can tell them via a print out
